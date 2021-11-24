@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // ECMAScript - cuida do JavaScript
+    const weight = ''
+    console.log(typeof weight)
+    let name = "Erik"
+    let age = 21
+    let stars = 21.99
+    let isSubscribed = true
+    console.log(typeof name)
+    console.log(typeof age)
+    console.log(typeof stars)
+    console.log(typeof isSubscribed)
+
+    //Object
+    let pessoa = {
+      nome: 'Erick',
+      year: 1999,
+      weight: 65.9,
+    }
+    console.log(pessoa.nome)
+    console.log(pessoa.year)
+    console.log(pessoa.weight)
+    console.log(`O ${pessoa.nome} nasceu em ${pessoa.year} e pesa ${pessoa.weight}`)
+
+    //Array
+    let familia = [];
+
+    familia = [
+      pessoa
+    ]
+    console.log(familia)
+    console.log(familia[0])
+
+    let pessoaNova = {
+      nome: 'Pedro',
+      age: 13,
+      weight: 59,
+    }
+
+    
+    familia = [
+      pessoa,
+      pessoaNova
+    ]
+    /*
+    ou 
+    familia[1] = pessoaNova
+    */
+    console.log(familia)
+  </script>
+</body>
+</html>
