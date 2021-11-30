@@ -48,6 +48,33 @@
     }
 
     fam()
-  </script>
+
+    //Function Construction
+    
+   function Person(name) {
+    this.cachorro = 'Pedro'
+    this.walk = function(){
+      return this.cachorro + ' esta andando mais rápido do que o ' + name 
+    }
+   }
+   const erick = new Person('Erick')
+   console.log(erick.walk())
+   console.log(erick)
+
+   //Switch
+
+   const expression = true
+   switch ( expression ){
+    case true:
+       console.log('Campeão')
+       break
+    case false:
+      console.log('Perdedor')
+      break
+    default:
+      console.log('default')
+      break
+   } 
+</script>
 </body>
 </html>
