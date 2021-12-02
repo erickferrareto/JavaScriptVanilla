@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Notas escolares:
+    /*
+    let nota1 = 9
+    let nota2 = 9
+    let soma = (nota1 + nota2) / 2
+    if( soma >= 9 ){
+      console.log(' Nota A ')
+    } else if( soma >= 7 && soma < 9 ){
+      console.log(' Nota B ')
+    } else if( soma >= 5 && soma < 7){
+      console.log( ' Nota C ')
+    } else if( soma < 5){
+      console.log( 'Nota D ')
+    } else {
+      console.log('Nota Errada')
+    }
+    */
+    // Despesa Familiar
+
+    const Family = {
+      receitas: 1000,
+      despesas: 1000
+    }
+
+    function gastos(rece, despe){
+      let carteira = rece - despe
+      if(carteira > 0){
+        return console.log('Saldo Positivo')
+      } else if (carteira < 0){
+        return console.log('Saldo Negativo')
+      } else {
+        return console.log('Saldo Zerado')
+      }
+    } 
+    
+    gastos(Family.receitas, Family.despesas)
+
+  </script>
+</body>
+</html>
