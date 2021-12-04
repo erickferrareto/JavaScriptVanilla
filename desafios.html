@@ -8,7 +8,7 @@
 </head>
 <body>
   <script>
-    // Notas escolares:
+  // Notas escolares:
     /*
     let nota1 = 9
     let nota2 = 9
@@ -24,12 +24,12 @@
     } else {
       console.log('Nota Errada')
     }
-    */
-    // Despesa Familiar
+    
+  // Despesa Familiar
 
     const Family = {
       receitas: 1000,
-      despesas: 1000
+      despesas: 500
     }
 
     function gastos(rece, despe){
@@ -44,6 +44,88 @@
     } 
     
     gastos(Family.receitas, Family.despesas)
+
+  // Celsius to Fahrenheit
+
+    const celsius = 0
+    const fahrenheit = 70
+
+    function toFahren( celsius ){
+      const fah = (celsius * 9/5) + 32 
+      return fah
+    }
+
+    function toCelsius( fahrenheit ){
+      const cel =  (fahrenheit - 32) * 5/9
+      return cel
+    }
+
+
+    if ( celsius != 0 ){
+      console.log(toFahren(celsius))  
+    } else if ( fahrenheit != 0 ){
+      console.log(toCelsius(fahrenheit))
+    } else {
+      console.log('ERRO!!')
+    }
+    */
+  //Trabalhando com Arrays
+
+  const bookByCategory = [
+    {
+      category: "Riqueza",
+      books: [
+          {
+            title: 'Os segredos da mente milionária',
+            autor: 'T. Harv Eker',
+          },
+          {
+            title: "O homem mais rico da Babilônia",
+            autor: "George S. Clason",
+          },
+          {
+            title: 'Pai Rico, Pai Pobre',
+            autor: 'Robert T. Kiyosaki',
+          },
+        ]
+    },
+    {
+      category: 'Inteligência Emocional',
+      books: [
+          {
+            title: 'Você é Insubstituível',
+            autor: 'Augusto Cury',
+          },
+          {
+            title: 'Ansiedade - Como enfrentar o mal do século XXI',
+            autor: 'Augusto Cury',
+          },
+          {
+            title: 'Os 7 hábitos das pessoas altamente eficazes',
+            autor: 'Stephen R. Covey',
+          },
+        ]
+    }
+  ];
+
+  //Número de categorias
+  let categorias = bookByCategory.length
+  
+  //Número de Livros em cada categoria 
+  const categoria1 = bookByCategory[0]
+  const categoria2 = bookByCategory[1]
+  const soma = categoria1.books.length + categoria2.books.length  
+  
+  //Quantidade de autores
+ 
+
+
+
+ 
+  console.log(`O array contém ${categorias} categorias`)
+  console.log(`A quantidade de livros nas ${categorias} categorias, equivale á ${soma}`)
+   
+
 
   </script>
 </body>
